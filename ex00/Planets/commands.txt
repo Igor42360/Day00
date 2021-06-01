@@ -1,0 +1,1020 @@
+Script started on 2021-05-31 12:01:26+0200
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ Jupiter.jpg Day00/ex00/Planets//Real
+Jupiter.jpg: command not found
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Jupiter.jpg Day00/ex00/Planeets/Real
+mv: cannot move 'Jupiter.jpg' to 'Day00/ex00/Planets/Real': No such file or directory
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Jupiet[K[Kter.jpg Real
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Lune.jpg Mercure.j[K[K[K[K[K[K[K[K[KReal/te[K[KTelluriques
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ history commands.txt
+bash: history: commands.txt: numeric argument required
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ co[K[Khistory>>[K[K[Ky >> commands.txt
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ cat commands.txt
+    1  eject
+    2  hostname
+    3  ssh apprenant-desktop@192.168.104.135
+    4  nmap
+    5  sudo apt-get install nmap
+    6  nmap 192
+    7  ifconfig
+    8  nmpa 192.168.104.251/255.255.252.0
+    9  nmap 192.168.104.251/255.255.252.0
+   10  nmap 192.168.104.251 /255.255.252.0
+   11  ping 192.168.104.252
+   12  ping 192.168.104.254
+   13  ping 192.168.104.232
+   14  ping 192.168.104.225
+   15  ping 192.168.104.221
+   16  ssh apprenant-desktop@192.168.104.221
+   17  ssh apprenant@192.168.104.221
+   18  ssh itakademy@192.168.104.221
+   19  ssh itakademy@192.168.104.251
+   20  ls
+   21  cd Bureau/
+   22  ls
+   23  ls
+   24  cd Bureau/
+   25  touch log.txt
+   26  shutdown -n
+   27  shutdown -n
+   28  shutdown --n
+   29  shutdown
+   30  cd /root/Bureaux
+   31  cd /root/Bureau
+   32  cd Téléchargements
+   33  ls
+   34  strings ch21.pcap
+   35  touch test.pl
+   36  #
+   37  # bsidessf17 - dnscap
+   38  #
+   39  # script de volcado de datos de paquetes
+   40  # elimina los primeros 9 bytes de cada paquete
+   41  #
+   42  # fusion_ordenado.txt tiene el formato: <paquete>\t<datos>
+   43  #
+   44  # Rev.20170212 by sn4fu
+   45  use strict;
+   46  use warnings;
+   47  my $fichero = 'fusion_ordenado.txt';
+   48  open(my $fh,$fichero)
+   49  or die "No se ha encontrado el fichero '$fichero' $!";
+   50  while (my $linea = <$fh>) {
+   51   chomp $linea;                                      # quitar CR
+   52   my ($paquete, $datos) = split /\t/, $linea;        # parsear usando TAB como separador
+   53   my @cadenas = split /\./, $datos;                  # parsear las partes de la cadena de datos separadas con '.'
+   54   my $cadena_sobrante1 = 'org';                      # las cadenas 'org' no nos interesan
+   55   @cadenas = grep {startcadena_sobrante1/} @cadenas;
+   56   my $cadena_sobrante2 = 'skullseclabs';
+   57   @cadenas = grep {startcadena_sobrante2/} @cadenas;   # las cadenas 'skullseclabs' no no sinteresan
+   58   $cadenas[0] = substr ($cadenas[0], 18);            # a la primera cadena de cada paquete le quitamos los 9 primeros bytes (18 simbolos HEX)
+   59   foreach (@cadenas)
+   60     {       print "$_\n";                                 # imprimir los contenidos HEX de interés    }
+   61  ls
+   62  cd Téléchargements/
+   63  ls
+   64  touch test.py
+   65  curl http://challenge01.root-me.org/cryptanalyse/ch1/ch1.txt
+   66  curl GET  http://challenge01.root-me.org/cryptanalyse/ch1/ch1.txt
+   67  curl http://challenge01.root-me.org/cryptanalyse/ch1/ch1.txt
+   68  curl http://challenge01.root-me.org/cryptanalyse/ch1/ch1.txt > site.txt
+   69  ls
+   70  pyhton test.py decode(site.txt)
+   71  pyhton test.py decode()
+   72  pyhton test.py 
+   73  python test.py 
+   74  python test.py decode(site.txt)
+   75  python test.py decode
+   76  python test.py 
+   77  python test.py 
+   78  ls
+   79  srtings ch7.bin 
+   80  strings ch7.bin 
+   81  cat ch7.bin 
+   82  curl https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt > password.txt
+   83  ls
+   84  test.c ch5.zip password.txt 
+   85  c test.c ch5.zip password.txt 
+   86  gcc test.c -o test ch5.zip password.txt 
+   87  gcc test.c -o test
+   88  ./test.c ch5.zip password.txt 
+   89  sudo ./test.c ch5.zip password.txt 
+   90  test.c ch5.zip password.txt 
+   91  gcc test.c -o test ch5.zip password.txt 
+   92  sudo apt-get install fcrackzip 
+   93  fcrackzip -c a -p ch5.zip 
+   94  fcrackzip -c a -p aaaaaa ch5.zip 
+   95  fcrackzip -c a -p aaaaaaaaaa ch5.zip 
+   96  fcrackzip -c a -p aaaaaa ch5.zip 
+   97  fcrackzip -c a -p aaaaaa1 ch5.zip 
+   98  fcrackzip -c a -p password.txt ch5.zip 
+   99  fcrackzip ch5.zip -D -p password.txt -u
+  100   ssh -p 2222 app-script-ch11@challenge02.root-me.org
+  101   ssh -p 2222 app-script-ch11@challenge02.root-me.org
+  102  ping app-script-ch11@challenge02.root-me.org
+  103  ping challenge02.root-me.org
+  104  service ssh start
+  105  service ssh start
+  106  sudo
+  107  sudo -s
+  108  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  109  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "OU=Users" +
+  110  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "OU=" +
+  111  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  112  ldapsearch -x 
+  113  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "sn=anonymous" +
+  114  ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "sn=anonymous" +
+  115  ldapsearch -h challenge01.root-me.org -x -p 
+  116  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  117  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=config" +
+  118  ldapsearch -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org" ls
+  119  ldapsearch -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org"
+  120  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org"
+  121  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=root,dc=challenge01,dc=root-me,dc=org"
+  122  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=admin,dc=challenge01,dc=root-me,dc=org"
+  123  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=root,dc=challenge01,dc=root-me,dc=org"
+  124  ldapsearch -h challenge01.root-me.org -p 54013 -x -D "uid=tina,ou=People,dc=splunkers,dc=com" -b "dc=challenge01,dc=root-me,dc=com" -W
+  125  ldapsearch -h challenge01.root-me.org -p 54013 -x -D "uid=tina,ou=People,dc=splunkers,dc=com" -b "dc=challenge01,dc=root-me,dc=com" 
+  126  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" 
+  127  d
+  128  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" 
+  129  d
+  130  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com"
+  131  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" W
+  132  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" -W
+  133  dldf
+  134  c
+  135  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+  136  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=simpleSecurityObject)" dn
+  137  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=simpleSecurityObject)"
+  138  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=*)" dn
+  139  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" -W
+  140  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms
+  141  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms -Y EXTERNAL
+  142  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" -Y EXTERNAL
+  143  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" -w password
+  144  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+  145  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=groups, dc=challenge01;dc=root-me,dc=org" 
+  146  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=groups,dc=challenge01;dc=root-me,dc=org" 
+  147  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=users,dc=challenge01;dc=root-me,dc=org" 
+  148  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "" 
+  149  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "dc=challenge01,dc=root-me,dc=org" 
+  150  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "" 
+  151  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "objectClass=*"
+  152  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  153  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=Subschema"
+  154  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=EntryDN"
+  155  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=NULL BIND"
+  156  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "cn=NULL BIND,dc=challenge01,dc=root-me,dc=org" 
+  157  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" 
+  158  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“(objectClass=*)” “*” +
+  159  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“(objectClass=*)” “*” +
+  160  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“ (objectClass=*)” “*” +
+  161  ldapsearch -x -s base -b  -H  challenge01.root-me.org (objectClass=*)” “*” +
+  162  ldapsearch -x -s base -b  -H  challenge01.root-me.org (objectClass=*) “*” +
+  163  ldapsearch -x -s base -b  -H  challenge01.root-me.org "objectClass=*" “*” +
+  164  ldapsearch -x -s base -b  -H  ldap://challenge01.root-me.org "objectClass=*" “*” +
+  165  ldapsearch -x -s base -b  -H  challenge01.root-me.org -p 54013 "objectClass=*" “*” +
+  166  ldapsearch -x -s base -b  -h  challenge01.root-me.org -p 54013 "objectClass=*" “*” +
+  167  ldapsearch -x -s base -b  -H  challenge01.root-me.org -p -h 54013 "objectClass=*" “*” +
+  168  ldapsearch -x -s base -b  -H  challenge01.root-me.org -h -p 54013 "objectClass=*" “*” +
+  169  ldapsearch -x -b 'dc=challenge01,dc=root-me,dc=org' - 54013
+  170  ldapsearch -x -b 'dc=challenge01,dc=root-me,dc=org' -p 54013
+  171  ldapsearch -x -b challenge01.root-me.org  "dc=challenge01,dc=root-me,dc=org"
+  172  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms -Y EXTERNAL
+  173  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+  174  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" groups
+  175  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" users
+  176  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" isMemberOf
+  177  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" Member
+  178  ldapsearch -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  179  ldapsearch -x -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  180  ldapsearch -x -h -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  181  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b ""  "(&(objectClass=*))"
+  182  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b ""  "(&(objectClass=OpenLDAProotDSE))"
+  183  ldapsearch -x -h -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  184  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  185  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  186  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  187  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ++
+  188  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  189  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ++*
+  190  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  191  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" m
+  192  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  193  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  194  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" {
+  195  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ;
+  196  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" %
+  197  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" %*
+  198  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 'admin
+  199  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" &
+  200  ldapsearch -x -b challenge01.root-me.org  "cn=Directory Service,dc=challenge01,dc=root-me,dc=org"
+  201  ldapsearch -x -b challenge01.root-me.org  "cn=Directory Service,dc=challenge01,dc=root-me,dc=org"
+  202  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  203  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Directory Service,dc=challenge01,dc=rott-me;dc=org"
+  204  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Directory Service,dc=challenge01,dc=root-me;dc=org"
+  205  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*,dc=challenge01,dc=root-me;dc=org"
+  206  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=+,dc=challenge01,dc=root-me;dc=org"
+  207  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "ou=*,dc=challenge01,dc=root-me;dc=org"
+  208  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "o=*,dc=challenge01,dc=root-me;dc=org"
+  209  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "o=*,dc=challenge01,dc=root-me,dc=org"
+  210  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "ou=*,dc=challenge01,dc=root-me,dc=org"
+  211  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*,dc=challenge01,dc=root-me,dc=org"
+  212   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  213   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  214   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  215   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" +
+  216   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Subschema,dc=challenge01,dc=root-me,dc=org" +
+  217   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Subschema,dc=challenge01,dc=root-me,dc=org" 
+  218   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" 
+  219   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" +
+  220   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  221   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" =
+  222   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" -
+  223   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  224   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dn=anonymous" 
+  225   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dn=*" 
+  226   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*" 
+  227   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=anonymous" 
+  228   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=admin" 
+  229  ldapsearch -b 'dc=challenge01,dc=root-me,dc=org' '(cn=*)'
+  230  ldapsearch -b challenge01.root-me.org 'dc=challenge01,dc=root-me,dc=org' '(cn=*)'
+  231   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" 
+  232   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" +
+  233   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" 
+  234   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" 
+  235   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" +
+  236   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" +
+  237   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  238  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  239  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "*"
+  240  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  241  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png 
+  242  ls
+  243  mkdir image
+  244  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png > image
+  245  curl five  http://challenge01.root-me.org/steganographie/ch1/ch1.png
+  246  curl file http://challenge01.root-me.org/steganographie/ch1/ch1.png > image
+  247  curl file http://challenge01.root-me.org/steganographie/ch1/ch1.png
+  248  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png > image.txt
+  249  sudo nano ~/.ssh/known_hosts
+  250  cd Bureau
+  251  ls
+  252  cd ../
+  253  cd Desktop/
+  254  ls
+  255  cd virtu11
+  256  ls
+  257  vagrant init
+  258  nano Vagrantfile 
+  259  vagrant up
+  260  vagrant ssh
+  261  vagrant ssh-config
+  262  vagrant ssh
+  263  nano Vagrantfile 
+  264  vagrant reload
+  265  vagrant up
+  266  vagrant ssh
+  267  cd Desktop/virtu12
+  268  vagrant init
+  269  nano Vagrantfile 
+  270  vagrant up
+  271  vagrant ssh
+  272  pwd
+  273  cd Desktop/virtu11/
+  274  vagrant up
+  275  vagrant ssh
+  276  cd Desktop/virtu12
+  277  vagrant init
+  278  nano Vagrantfile 
+  279  vagrant up
+  280  vagrant ssh
+  281  nano Vagrantfile 
+  282  vagrant reload
+  283  vagrant up
+  284  nano Vagrantfile 
+  285  nano Vagrantfile 
+  286  cd Desktop
+  287  cd virtu12
+  288  vagrant init
+  289  nano Vagrantfile 
+  290  vagrant up
+  291  vagrant ssh
+  292  cd Desktop
+  293  cd virtu12
+  294  vagrant up
+  295  vagrant ssh
+  296  cd Desktop/virtu11/
+  297  vagrant up
+  298  vagrant ssh
+  299  cd Desktop/virtu13
+  300  vagrant up
+  301  vagrant ssh
+  302  virtualbox 
+  303  exit
+  304  cd Bureau
+  305  ls
+  306  ls
+  307  cd ..
+  308  ls
+  309  cd Bureau
+  310  ls
+  311  cd laravel2
+  312  ls
+  313  cd..
+  314  cd ..
+  315  ls
+  316  cd Bureau
+  317  ls
+  318  ls
+  319  cd ..
+  320  cd Desktop
+  321  ls
+  322  cd laravel2
+  323  ls
+  324  vagrant up
+  325  php artisan migrate
+  326  vagrant ssh
+  327  vagrant halt && vagrant destroy
+  328  ls
+  329  nano Vagrantfile 
+  330  nano Vagrantfile 
+  331  vagrant up
+  332  vagrant ssh
+  333  vagrant ssh-config
+  334  sudo nano ~/.ssh/known_hosts 
+  335  vagrant ssh
+  336  cd Desktop/laravel2/
+  337  ls
+  338  cd data
+  339  ls
+  340  cd project
+  341  ls
+  342  cd ../
+  343  git init
+  344  cd Desktop
+  345  cd laravel2/
+  346  cd data
+  347  ls
+  348  git remote add origin https://github.com/Le-TRex/adam.git
+  349  git status
+  350  git add --all
+  351  git commit -m "projet laravel Adam"
+  352  git push origin master
+  353  cd Desktop/virtu12
+  354  vagrant ssh-config
+  355  sudo nano ~/.ssh/known_hosts
+  356  cd Desktop/virtu12
+  357  ls
+  358  mkdir front
+  359  ls
+  360  cd front
+  361  touch index.html
+  362  cd Desktop
+  363  cd virtu12
+  364  ls
+  365  vagrant init
+  366  nano Vagrantfile 
+  367  vagrant up
+  368  vagrant ssh
+  369  vagrant ssh
+  370  vagrant ssh
+  371  cd Desktop/virtu11
+  372  ls
+  373  vagrant up
+  374  vagrant ssh
+  375  cd Desktop
+  376  cd virtu12
+  377  ls
+  378  vagrant ssh
+  379  vagrant up
+  380  vagrant ssh
+  381  cd Desktop/ajax/
+  382  git clone https://github.com/Le-TRex/evalAJAX.git .
+  383  sudo rm -rf Téléchargements/*
+  384  cat /home/script.sh 
+  385  cd Desktop
+  386  ls
+  387  cd nodejs
+  388  vagrant init
+  389  nano Vagrantfile
+  390  mkdir data
+  391  ls
+  392  vagrant up
+  393  nano Vagrantfile
+  394  vagrant reload
+  395  nano ssh
+  396  vagrant ssh
+  397  vagrant halt
+  398  ls
+  399  vagrant detroy
+  400  vagrant destroy
+  401  ls
+  402  cd ..
+  403  ls
+  404  mkdir cours
+  405  ls
+  406  cd cours
+  407  ls 
+  408  vagrant init
+  409  ls
+  410  nano Vagrantfile
+  411  mkdir data
+  412  ls
+  413  vagrant up
+  414  vagrant ssh
+  415  vagrant ssh-config
+  416  vagrant ssh
+  417  cd Desktop/cours
+  418  vagrant ssh-config
+  419  cd desktop/cours
+  420  ls
+  421  cd Desktop
+  422  cd cours
+  423  ls
+  424  vagrant up
+  425  vagrant ssh
+  426  cd 
+  427  ls
+  428  cd Desktop/cours
+  429  ls 
+  430  vagrant up
+  431  vagrant ssh
+  432  set DEBUG=appli:* & npm start
+  433  vagrant up
+  434  vagrant ssh
+  435  cd Desktop/cours/
+  436  ls
+  437  vagrant up
+  438  vagrant ssh
+  439  cd Desktop/eval/
+  440  ls
+  441  vagrant ssh-config
+  442  cd Desktop/eval2/
+  443  vagrant ssh-config
+  444  vagrant ssh
+  445  vagrant up
+  446  vagrant ssh
+  447  vagrant halt
+  448  ls
+  449  cd Desktop/
+  450  ls
+  451  mkdir eval
+  452  cd eval
+  453  ls
+  454  vangrant init
+  455  vagrant init
+  456  nano Vagrantfile
+  457  vagrant up
+  458  mkdir data
+  459  vagrant up
+  460  vagrant ssh
+  461  vagrant halt
+  462  cd ..
+  463  mkdir eval2
+  464  cd eval2
+  465  ls
+  466  vagrant init
+  467  nano Vagrantfile
+  468  vagrant up
+  469  mkdir data
+  470  vagrant up
+  471  vagrant ssh
+  472  ls
+  473  cd data
+  474  ls
+  475  cd contacts
+  476  ls
+  477  git init
+  478  git add README.md
+  479  git add --all
+  480  git commit -m "first commit"
+  481  git remote add origin https://github.com/SolineMP/evalnodeJs.git
+  482  git push -u origin master
+  483  git add --all
+  484  git status
+  485  git commit -m "2nd commit"
+  486  git push origin master
+  487  exit
+  488  flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+  489  flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+  490  flatpak run org.gimp.GIMP//stable
+  491  ping www.google.com
+  492  ls
+  493  man ls
+  494  Jupiter.jpg Day00/ex00/Planets/Real
+  495  mv Jupiter.jpg Day00/ex00/Planets/Real
+  496  mv Jupiter.jpg Real
+  497  mv Lune.jpg Real/Telluriques
+  498  history commands.txt
+  499  history >> commands.txt
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv mars.jpeg Real/Telluriques
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ Mercure.jpg Neptune.jpg[K[K[K[K[K[K[K[K[K[K[KVenus.jpg Real/Tel luriques
+Mercure.jpg: command not found
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ Mercure.jpg Real/Telluriques
+Mercure.jpg: command not found
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Mercure.jpg Real/Tellutique s[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kllurique s
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Terre.jpg Real/Telluriques
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Jupiter.jpg Real/Gazeuses
+mv: cannot stat 'Jupiter.jpg': No such file or directory
+apprenant@apprenant-desktop:~/Day00/ex00/Planets$ mv Jupiter.jpg Real/Gazeusse[K[Kes[1@Re Jupiter.jpg Real/Gazeuses [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca Jupiter.jpg Real/Gazeusess[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl Jupiter.jpg Real/Gazeuses[A[C[C[C[C[C[C[C   18  ls
+   19  test.c ch5.zip password.txt 
+   20  c test.c ch5.zip password.txt 
+   21  gcc test.c -o test ch5.zip password.txt 
+   22  gcc test.c -o test
+   23  ./test.c ch5.zip password.txt 
+   24  sudo ./test.c ch5.zip password.txt 
+   25  test.c ch5.zip password.txt 
+   26  gcc test.c -o test ch5.zip password.txt 
+   27  sudo apt-get install fcrackzip 
+   28  fcrackzip -c a -p ch5.zip 
+   29  fcrackzip -c a -p aaaaaa ch5.zip 
+   30  fcrackzip -c a -p aaaaaaaaaa ch5.zip 
+   31  fcrackzip -c a -p aaaaaa ch5.zip 
+   32  fcrackzip -c a -p aaaaaa1 ch5.zip 
+   33  fcrackzip -c a -p password.txt ch5.zip 
+   34  fcrackzip ch5.zip -D -p password.txt -u
+   35   ssh -p 2222 app-script-ch11@challenge02.root-me.org
+   36   ssh -p 2222 app-script-ch11@challenge02.root-me.org
+   37  ping app-script-ch11@challenge02.root-me.org
+   38  ping challenge02.root-me.org
+   39  service ssh start
+   40  service ssh start
+   41  sudo
+   42  sudo -s
+   43  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+   44  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "OU=Users" +
+   45  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "OU=" +
+   46  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+   47  ldapsearch -x 
+   48  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "sn=anonymous" +
+   49  ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "sn=anonymous" +
+   50  ldapsearch -h challenge01.root-me.org -x -p 
+   51  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+   52  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=config" +
+   53  ldapsearch -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org" ls
+   54  ldapsearch -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org"
+   55  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "dc=challenge01,dc=root-me,dc=org"
+   56  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=root,dc=challenge01,dc=root-me,dc=org"
+   57  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=admin,dc=challenge01,dc=root-me,dc=org"
+   58  ldapsearch -x -h challenge01.root-me.org -p 54013 -b "cn=root,dc=challenge01,dc=root-me,dc=org"
+   59  ldapsearch -h challenge01.root-me.org -p 54013 -x -D "uid=tina,ou=People,dc=splunkers,dc=com" -b "dc=challenge01,dc=root-me,dc=com" -W
+   60  ldapsearch -h challenge01.root-me.org -p 54013 -x -D "uid=tina,ou=People,dc=splunkers,dc=com" -b "dc=challenge01,dc=root-me,dc=com" 
+   61  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" 
+   62  d
+   63  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" 
+   64  d
+   65  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com"
+   66  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" W
+   67  ldapsearch -h challenge01.root-me.org -p 54013 -x -D cn=Users" -b "dc=challenge01,dc=root-me,dc=com" -W
+   68  dldf
+   69  c
+   70  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+   71  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=simpleSecurityObject)" dn
+   72  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=simpleSecurityObject)"
+   73  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" "(objectClass=*)" dn
+   74  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "dc=challenge01,dc=root-me,dc=org" -W
+   75  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms
+   76  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms -Y EXTERNAL
+   77  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" -Y EXTERNAL
+   78  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" -w password
+   79  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+   80  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=groups, dc=challenge01;dc=root-me,dc=org" 
+   81  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=groups,dc=challenge01;dc=root-me,dc=org" 
+   82  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "ou=users,dc=challenge01;dc=root-me,dc=org" 
+   83  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "" 
+   84  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "dc=challenge01,dc=root-me,dc=org" 
+   85  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base "objectclass=*" -b "" 
+   86  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "objectClass=*"
+   87  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+   88  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=Subschema"
+   89  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=EntryDN"
+   90  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" "cn=NULL BIND"
+   91  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "cn=NULL BIND,dc=challenge01,dc=root-me,dc=org" 
+   92  ldapsearch -h challenge01.root-me.org -p 54013 -x -s base -b "dc=challenge01,dc=root-me,dc=org" 
+   93  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“(objectClass=*)” “*” +
+   94  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“(objectClass=*)” “*” +
+   95  ldapsearch -x -s base -b ” -H  ldap://challenge01.root-me.org“ (objectClass=*)” “*” +
+   96  ldapsearch -x -s base -b  -H  challenge01.root-me.org (objectClass=*)” “*” +
+   97  ldapsearch -x -s base -b  -H  challenge01.root-me.org (objectClass=*) “*” +
+   98  ldapsearch -x -s base -b  -H  challenge01.root-me.org "objectClass=*" “*” +
+   99  ldapsearch -x -s base -b  -H  ldap://challenge01.root-me.org "objectClass=*" “*” +
+  100  ldapsearch -x -s base -b  -H  challenge01.root-me.org -p 54013 "objectClass=*" “*” +
+  101  ldapsearch -x -s base -b  -h  challenge01.root-me.org -p 54013 "objectClass=*" “*” +
+  102  ldapsearch -x -s base -b  -H  challenge01.root-me.org -p -h 54013 "objectClass=*" “*” +
+  103  ldapsearch -x -s base -b  -H  challenge01.root-me.org -h -p 54013 "objectClass=*" “*” +
+  104  ldapsearch -x -b 'dc=challenge01,dc=root-me,dc=org' - 54013
+  105  ldapsearch -x -b 'dc=challenge01,dc=root-me,dc=org' -p 54013
+  106  ldapsearch -x -b challenge01.root-me.org  "dc=challenge01,dc=root-me,dc=org"
+  107  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" supportedSASLMechanisms -Y EXTERNAL
+  108  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" namingContexts
+  109  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" groups
+  110  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" users
+  111  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" isMemberOf
+  112  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b "" Member
+  113  ldapsearch -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  114  ldapsearch -x -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  115  ldapsearch -x -h -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  116  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b ""  "(&(objectClass=*))"
+  117  ldapsearch -h challenge01.root-me.org -p 54013 -x -LLL -s base -b ""  "(&(objectClass=OpenLDAProotDSE))"
+  118  ldapsearch -x -h -p 54013 -b dc=challenge01,dc=root-me,dc=org "(&(objectClass=*))"
+  119  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  120  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  121  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  122  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ++
+  123  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  124  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ++*
+  125  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  126  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" m
+  127  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  128  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  129  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" {
+  130  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" ;
+  131  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" %
+  132  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" %*
+  133  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 'admin
+  134  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" &
+  135  ldapsearch -x -b challenge01.root-me.org  "cn=Directory Service,dc=challenge01,dc=root-me,dc=org"
+  136  ldapsearch -x -b challenge01.root-me.org  "cn=Directory Service,dc=challenge01,dc=root-me,dc=org"
+  137  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  138  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Directory Service,dc=challenge01,dc=rott-me;dc=org"
+  139  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Directory Service,dc=challenge01,dc=root-me;dc=org"
+  140  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*,dc=challenge01,dc=root-me;dc=org"
+  141  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=+,dc=challenge01,dc=root-me;dc=org"
+  142  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "ou=*,dc=challenge01,dc=root-me;dc=org"
+  143  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "o=*,dc=challenge01,dc=root-me;dc=org"
+  144  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "o=*,dc=challenge01,dc=root-me,dc=org"
+  145  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "ou=*,dc=challenge01,dc=root-me,dc=org"
+  146  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*,dc=challenge01,dc=root-me,dc=org"
+  147   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  148   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  149   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  150   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" +
+  151   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Subschema,dc=challenge01,dc=root-me,dc=org" +
+  152   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=Subschema,dc=challenge01,dc=root-me,dc=org" 
+  153   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" 
+  154   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dc=challenge01,dc=root-me,dc=org" +
+  155   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  156   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" =
+  157   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" -
+  158   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" *
+  159   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dn=anonymous" 
+  160   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "dn=*" 
+  161   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=*" 
+  162   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=anonymous" 
+  163   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "cn=admin" 
+  164  ldapsearch -b 'dc=challenge01,dc=root-me,dc=org' '(cn=*)'
+  165  ldapsearch -b challenge01.root-me.org 'dc=challenge01,dc=root-me,dc=org' '(cn=*)'
+  166   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" 
+  167   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" +
+  168   ldapsearch -h challenge01.root-me.org -x -p 54013 -s one -b "" 
+  169   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" 
+  170   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" +
+  171   ldapsearch -h challenge01.root-me.org -x -p 54013 -s sub -b "" +
+  172   ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  173  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" +
+  174  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "*"
+  175  ldapsearch -h challenge01.root-me.org -x -p 54013 -s base -b "" 
+  176  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png 
+  177  ls
+  178  mkdir image
+  179  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png > image
+  180  curl five  http://challenge01.root-me.org/steganographie/ch1/ch1.png
+  181  curl file http://challenge01.root-me.org/steganographie/ch1/ch1.png > image
+  182  curl file http://challenge01.root-me.org/steganographie/ch1/ch1.png
+  183  curl http://challenge01.root-me.org/steganographie/ch1/ch1.png > image.txt
+  184  sudo nano ~/.ssh/known_hosts
+  185  cd Bureau
+  186  ls
+  187  cd ../
+  188  cd Desktop/
+  189  ls
+  190  cd virtu11
+  191  ls
+  192  vagrant init
+  193  nano Vagrantfile 
+  194  vagrant up
+  195  vagrant ssh
+  196  vagrant ssh-config
+  197  vagrant ssh
+  198  nano Vagrantfile 
+  199  vagrant reload
+  200  vagrant up
+  201  vagrant ssh
+  202  cd Desktop/virtu12
+  203  vagrant init
+  204  nano Vagrantfile 
+  205  vagrant up
+  206  vagrant ssh
+  207  pwd
+  208  cd Desktop/virtu11/
+  209  vagrant up
+  210  vagrant ssh
+  211  cd Desktop/virtu12
+  212  vagrant init
+  213  nano Vagrantfile 
+  214  vagrant up
+  215  vagrant ssh
+  216  nano Vagrantfile 
+  217  vagrant reload
+  218  vagrant up
+  219  nano Vagrantfile 
+  220  nano Vagrantfile 
+  221  cd Desktop
+  222  cd virtu12
+  223  vagrant init
+  224  nano Vagrantfile 
+  225  vagrant up
+  226  vagrant ssh
+  227  cd Desktop
+  228  cd virtu12
+  229  vagrant up
+  230  vagrant ssh
+  231  cd Desktop/virtu11/
+  232  vagrant up
+  233  vagrant ssh
+  234  cd Desktop/virtu13
+  235  vagrant up
+  236  vagrant ssh
+  237  virtualbox 
+  238  exit
+  239  cd Bureau
+  240  ls
+  241  ls
+  242  cd ..
+  243  ls
+  244  cd Bureau
+  245  ls
+  246  cd laravel2
+  247  ls
+  248  cd..
+  249  cd ..
+  250  ls
+  251  cd Bureau
+  252  ls
+  253  ls
+  254  cd ..
+  255  cd Desktop
+  256  ls
+  257  cd laravel2
+  258  ls
+  259  vagrant up
+  260  php artisan migrate
+  261  vagrant ssh
+  262  vagrant halt && vagrant destroy
+  263  ls
+  264  nano Vagrantfile 
+  265  nano Vagrantfile 
+  266  vagrant up
+  267  vagrant ssh
+  268  vagrant ssh-config
+  269  sudo nano ~/.ssh/known_hosts 
+  270  vagrant ssh
+  271  cd Desktop/laravel2/
+  272  ls
+  273  cd data
+  274  ls
+  275  cd project
+  276  ls
+  277  cd ../
+  278  git init
+  279  cd Desktop
+  280  cd laravel2/
+  281  cd data
+  282  ls
+  283  git remote add origin https://github.com/Le-TRex/adam.git
+  284  git status
+  285  git add --all
+  286  git commit -m "projet laravel Adam"
+  287  git push origin master
+  288  cd Desktop/virtu12
+  289  vagrant ssh-config
+  290  sudo nano ~/.ssh/known_hosts
+  291  cd Desktop/virtu12
+  292  ls
+  293  mkdir front
+  294  ls
+  295  cd front
+  296  touch index.html
+  297  cd Desktop
+  298  cd virtu12
+  299  ls
+  300  vagrant init
+  301  nano Vagrantfile 
+  302  vagrant up
+  303  vagrant ssh
+  304  vagrant ssh
+  305  vagrant ssh
+  306  cd Desktop/virtu11
+  307  ls
+  308  vagrant up
+  309  vagrant ssh
+  310  cd Desktop
+  311  cd virtu12
+  312  ls
+  313  vagrant ssh
+  314  vagrant up
+  315  vagrant ssh
+  316  cd Desktop/ajax/
+  317  git clone https://github.com/Le-TRex/evalAJAX.git .
+  318  sudo rm -rf Téléchargements/*
+  319  cat /home/script.sh 
+  320  cd Desktop
+  321  ls
+  322  cd nodejs
+  323  vagrant init
+  324  nano Vagrantfile
+  325  mkdir data
+  326  ls
+  327  vagrant up
+  328  nano Vagrantfile
+  329  vagrant reload
+  330  nano ssh
+  331  vagrant ssh
+  332  vagrant halt
+  333  ls
+  334  vagrant detroy
+  335  vagrant destroy
+  336  ls
+  337  cd ..
+  338  ls
+  339  mkdir cours
+  340  ls
+  341  cd cours
+  342  ls 
+  343  vagrant init
+  344  ls
+  345  nano Vagrantfile
+  346  mkdir data
+  347  ls
+  348  vagrant up
+  349  vagrant ssh
+  350  vagrant ssh-config
+  351  vagrant ssh
+  352  cd Desktop/cours
+  353  vagrant ssh-config
+  354  cd desktop/cours
+  355  ls
+  356  cd Desktop
+  357  cd cours
+  358  ls
+  359  vagrant up
+  360  vagrant ssh
+  361  cd 
+  362  ls
+  363  cd Desktop/cours
+  364  ls 
+  365  vagrant up
+  366  vagrant ssh
+  367  set DEBUG=appli:* & npm start
+  368  vagrant up
+  369  vagrant ssh
+  370  cd Desktop/cours/
+  371  ls
+  372  vagrant up
+  373  vagrant ssh
+  374  cd Desktop/eval/
+  375  ls
+  376  vagrant ssh-config
+  377  cd Desktop/eval2/
+  378  vagrant ssh-config
+  379  vagrant ssh
+  380  vagrant up
+  381  vagrant ssh
+  382  vagrant halt
+  383  ls
+  384  cd Desktop/
+  385  ls
+  386  mkdir eval
+  387  cd eval
+  388  ls
+  389  vangrant init
+  390  vagrant init
+  391  nano Vagrantfile
+  392  vagrant up
+  393  mkdir data
+  394  vagrant up
+  395  vagrant ssh
+  396  vagrant halt
+  397  cd ..
+  398  mkdir eval2
+  399  cd eval2
+  400  ls
+  401  vagrant init
+  402  nano Vagrantfile
+  403  vagrant up
+  404  mkdir data
+  405  vagrant up
+  406  vagrant ssh
+  407  ls
+  408  cd data
+  409  ls
+  410  cd contacts
+  411  ls
+  412  git init
+  413  git add README.md
+  414  git add --all
+  415  git commit -m "first commit"
+  416  git remote add origin https://github.com/SolineMP/evalnodeJs.git
+  417  git push -u origin master
+  418  git add --all
+  419  git status
+  420  git commit -m "2nd commit"
+  421  git push origin master
+  422  exit
+  423  flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+  424  flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+  425  flatpak run org.gimp.GIMP//stable
+  426  ping www.google.com
+  427  ls
+  428  man ls
+  429  ls
+  430  ls
+  431  cd Images
+  432  ls
+  433  mkdir real
+  434  ls
+  435  cd real
+  436  cd ..
+  437  cd .
+  438  cd ..
+  439  git clone https://github.com/Igor42360/Day00.git
+  440  git clone https://github.com/Igor42360/Day00.git
+  441  ls
+  442  cd Day00
+  443  cd ex00/Planets
+  444  mkdirreal
+  445  mkdirReal
+  446  mkdir Real
+  447  mkdir StarWars
+  448  mkdir StarTrek
+  449  cd Real
+  450  mkdir Telluriques
+  451  mkdir Gazeuses
+  452  cd Day00
+  453  cd..
+  454  cd..
+  455  cd ..
+  456  cd ..
+  457  cd Planets
+  458  touch commands.txt
+  459  ls
+  460  history
+  461  history >> commands.txt 
+  462  cat commands.txt 
+  463  ls
+  464  cat commands.txt 
+  465  cat commands.txt 
+  466  ls
+  467  rm commands.txt 
+  468  touch commands.txt
+  469  cat commands.txt 
+  470  touch documents.txt
+  471  cd Real
+  472  mv Jupiter.jpg
+  473  cd..
+  474  cd ..
+  475  mv Jupiter.jpg /Real
+  476  mv Jupiter /Real
+  477  mv Jupiter /Day00/ex00/Planets/Real
+  478  mv Jupiter /Day00/ex00/Planets/Real
+  479  script commands.txt
+  480  Jupiter.jpg Day00/ex00/Planets/Real
+  481  mv Jupiter.jpg Day00/ex00/Planets/Real
+  482  mv Jupiter.jpg Real
+  483  mv Lune.jpg Real/Telluriques
+  484  history commands.txt
+  485  history >> commands.txt
+  486  cat commands.txt
+  487  mv mars.jpeg Real/Telluriques
+  488  Mercure.jpg Venus.jpg Real/Telluriques
+  489  Mercure.jpg Real/Telluriques
+  490  mv Mercure.jpg Real/Telluriques
+  491  mv Terre.jpg Real/Telluriques
+  492  mv Jupiter.jpg Real/Gazeuses
+  493  mv Real/Jupiter.jpg Real/Gazeuses
+  494  cd Docu
+  495  cd Documents/
+  496  ls 
+  497  cd ..
+  498  ls
+  499  cd Days00
+  500  cd Day
+  501  cd Day00
+  502  ls
+  503  cd ex00
+  504  ls
+  505  cd Planets
+  506  ls
+  507  history
+  508  ls
+  509  history
+  510  mv Neptune.jpg saturn.png Uranus.jpg Pluton.jpg Real/Gazeuses 
+  511  mv Venus.jpg Real/Telluriques
+  512  mv Coruscant.jpg Mustafar.png Naboo.png Tatooine.jpg Starwars
+  513  mv Coruscant.jpg Mustafar.png Naboo.png Tatooine.jpg StarWars
+  514  mv Andoria.jpg JanusVI Risa.jpg Taris.png Vulcan.jpg StarTrek
+  515  mv Janus.jpg StarTrek
+  516  mv JanusVI.jpg StarTrek
+  517  history >> commands.txt
