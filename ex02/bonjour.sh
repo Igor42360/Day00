@@ -1,3 +1,3 @@
 echo "Bonjour, quel est vôtre prénom ?"
-Read var
+read var
 echo "Bonjour, $var"
